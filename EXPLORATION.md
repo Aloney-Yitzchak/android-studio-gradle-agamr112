@@ -87,7 +87,7 @@ implementation 'com.google.code.gson:gson:2.10.1'
 
 **מה קורה כשלוחצים על "Sync Now"?**
 
-
+כאשר לוחצים על "Sync Now", גריידל מסנכרן את הפרויקט עם קבצי ההגדרות, מוריד את הספריות (dependencies) החדשות שהוספנו ומעדכן את הפרויקט כך שיוכל להשתמש בהן בקוד.
 
 
 **מה יקרה אם לא נלחץ על Sync Now אחרי שהוספנו dependency?**
@@ -102,13 +102,15 @@ implementation 'com.google.code.gson:gson:2.10.1'
 
 **צלם screenshot של קובץ strings.xml שלך (עם לפחות 3 strings):**
 
-**[הדבק תמונה]**
+<img width="1133" height="221" alt="image" src="https://github.com/user-attachments/assets/9ab8dfee-58ad-4f12-a58a-9405cd2059eb" />
+
+
 
 **רשום את 3 ה-strings שהוספת:**
 
-1. _________________
-2. _________________
-3. _________________
+1. <string name="app_name">Trial</string>
+2.  <string name="welcome_message">Welcome to Trial!</string>
+3. <string name="button_start">Start</string>
 
 ---
 
@@ -116,28 +118,28 @@ implementation 'com.google.code.gson:gson:2.10.1'
 
 **איך יצרת layout file חדש? תאר את התהליך צעד אחר צעד:**
 
-1. _________________
-2. _________________
-3. _________________
-4. _________________
+1. נכנסתי לתיקיית res/layout ב־Project view של Android Studio.
+2. לחצתי עם הכפתור הימני על layout בחרתי New Layout Resource File.
+3. הזנתי שם לקובץ (למשל activity_second) ובחרתי את ה־Root Element (כמו ConstraintLayout).
+4. לחצתי OK הקובץ נוצר ונפתח לעריכה.
 
 **צלם screenshot של ה-layout החדש:**
 
-**[הדבק תמונה]**
+<img width="1889" height="298" alt="image" src="https://github.com/user-attachments/assets/6b1daae2-62ff-49e1-bfe6-0747ed346a0a" />
 
----
 
 ### שאלה 9: הבנה כללית (10 נקודות)
 
 **מה ההבדל בין build.gradle (Project) ל-build.gradle (Module)?**
 
 
-
+הבילד.גריידל של ה‑Project מנהל הגדרות כלליות של כל הפרויקט, כמו גרסת Gradle, plugins גלובליים והגדרות repositories.
+הבילד.גריידל של ה‑Module מנהל את ההגדרות של המודול הספציפי, כולל dependencies, גרסאות SDK והגדרות build.
 
 **למה חשוב להפריד בין קוד (java/) לבין משאבים (res/)?**
 
 
-
+הפרדה זו מאפשרת סדר וארגון בפרויקט, הקלה על ניהול הקוד והגרפיקה, ותאימות ל־Android Studio שמצפה למבנה מסודר כדי להמיר ולהריץ את האפליקציה נכון.
 
 ---
 
